@@ -1,0 +1,10 @@
+./server/Dockerfile
+./client/Dockerfile
+
+./server/.dockerignore
+./client/.dockerignore
+
+
+./client/node_modules
+
+./server/dist
