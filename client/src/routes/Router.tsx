@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 import Login from '../components/login';
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
   },
   {
     path: '*',
-    element: <p>404 Error - Nothing here...</p>,
+    element: <Navigate to='login' />,
   },
 ]);
 
